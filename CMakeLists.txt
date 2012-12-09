@@ -1,0 +1,9 @@
+CMAKE_MINIMUM_REQUIRED(VERSION 2.8)
+#SET(PROJ_NAME xxx)
+PROJECT(proto_test)
+
+#FIND_PACKAGE(xxxx REQUIRED)
+
+ADD_SUBDIRECTORY(src)
+INSTALL(PROGRAMS tools/restart.sh DESTINATION proto_test/tools)
+INSTALL(FILES proto_test.conf DESTINATION proto_test/conf)
