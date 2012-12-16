@@ -1,0 +1,17 @@
+INPUT {
+    "proto": "gspace",
+    "head": {
+	"uin":343385528,"cmd":1,"seqno":2,"reserve":231313
+	},
+    "body": {
+	"auth_type":1,"cgi_type":"dfdfdf","guin":757878
+	},
+    "ctrl": {
+	"mode":"udp://127.0.0.1:52222","proto":"gspace"
+	},
+    "assert" { 
+	"EQ": {
+	    "seqno":2, "errcode":0
+	    } 
+	}
+}
